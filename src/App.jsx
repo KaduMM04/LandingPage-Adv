@@ -48,13 +48,10 @@ function App() {
         <p>Especialista em soluções juridicas personalizadas.</p>
       </header>
 
-      <div>
-         <Cards />
-      </div>
-
-      <div>
-        <Info />
-      </div>
+      
+      <Cards />
+      
+      <Info />
        
       <section className="form-section">
         <h2>Entre em contato conosco</h2>
