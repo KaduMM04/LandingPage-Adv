@@ -3,10 +3,6 @@
   background: #f4f4f4;
 }
 
-.cards-section h2 {
-  padding-bottom: 40px;
-}
-
 .cards {
   display: flex;
   justify-content: center;
@@ -16,29 +12,75 @@
 
 .card {
   position: relative;
-  background-size: cover;
-  background-position: center;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;
   height: 250px;
   width: 200px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   perspective: 1000px;
   cursor: pointer;
-  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Evita que conteúdo extra apareça */
 }
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.0); /* Começa transparente */
+  transition: background 0.5s ease; /* Animação do escurecimento */
+  z-index: 1; /* Fica acima da imagem, mas abaixo do texto */
+  border-radius: 8px;
+}
+
+.card:hover::before {
+  background: rgba(0, 0, 0, 0.6); /* Fica escuro ao passar o mouse */
+}
+
+.card .notification {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 3; /* Aparece acima do fundo escuro */
+  pointer-events: none;
+}
+
+.card:hover .notification {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px); /* Eleva a notificação suavemente */
+}
+
 
 .card .card-front,
 .card .card-back {
   position: absolute;
   backface-visibility: hidden;
-  width: 200px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.6s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 2; /* Fica acima do fundo escuro */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.5s ease; /* Animação de fade-in do texto */
 }
-
 
 .card .card-front {
   transform: rotateY(0deg);
@@ -46,6 +88,11 @@
 
 .card .card-back {
   transform: rotateY(180deg);
+}
+
+.card:hover .card-front,
+.card:hover .card-back {
+  opacity: 1; /* Texto aparece suavemente ao passar o mouse */
 }
 
 .card.flipped .card-front {
@@ -57,10 +104,6 @@
 }
 
 .card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+  transform: scale(1.1); /* Leve aumento no tamanho ao passar o mouse */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-.card h3 {
-  margin-bottom: 10px;
-} 
