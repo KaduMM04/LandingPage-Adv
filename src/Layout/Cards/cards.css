@@ -16,7 +16,8 @@
 
 .card {
   position: relative;
-  background: white;
+  background-size: cover;
+  background-position: center;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
@@ -26,6 +27,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   perspective: 1000px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .card .card-front,

@@ -64,7 +64,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.8rem;
-  color: #2c3e50;
+  color: #000000;
 }
 
 form {
@@ -120,7 +120,7 @@ form button:active {
 }
 
 .footer {
-  background: #2c3e50;
+  background: #000000;
   color: white;
   padding: 20px;
   margin-top: 20px;
