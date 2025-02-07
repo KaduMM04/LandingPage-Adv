@@ -26,20 +26,19 @@ const Cards = () => {
     {
       title: "Direito Civil",
       frontText: "Direito Civil",
-      backText: "Soluções para contratos, família e outros casos civis.",
+      backText: "Soluções para contratos, família, usucapião, inventários, divórcios e outros casos cíveis.",
       backgroundImage: CivilImg,
     },
     {
       title: "Direito Previdenciário",
       frontText: "Direito Previdenciário",
-      backText: "Questões previdenciárias como aposentadoria, pensões e auxílios.",
+      backText: "Solucões Previdenciárias como aposentadorias, pensão por morte, auxílio doença e Bpc/Loas.",
       backgroundImage: PrevImg,
     },
   ];
 
   return (
     <section className="cards-section">
-      <h2>Nossas Áreas de Atuação</h2>
       <div className="cards">
         {cardsData.map((area, index) => (
           <div

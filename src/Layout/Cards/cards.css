@@ -63,7 +63,6 @@
   transform: translateX(-50%) translateY(-5px); /* Eleva a notificação suavemente */
 }
 
-
 .card .card-front,
 .card .card-back {
   position: absolute;
@@ -106,4 +105,24 @@
 .card:hover {
   transform: scale(1.1); /* Leve aumento no tamanho ao passar o mouse */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

@@ -11,7 +11,7 @@ body {
 .banner {
   position: relative;
   background-color: rgba(0, 0, 0, 0.3); /* Adiciona uma camada escura se necessário */
-  padding: 150px;
+  padding: 220px;
   text-align: center;
   color: white;
 
@@ -28,8 +28,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(1px);
-  z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
 }
 
 .banner h1,
@@ -48,75 +46,45 @@ body {
   margin-top: 10px;
 }
 
-
-.form-section {
-  width: 90%;
-  max-width: 700px;
-  border-radius: 8px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  margin: 20px auto;
-  background: #f4f4f4;
-}
-
-.form-section h2 {
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  color: #000000;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Estilização geral */
+.tab-container {
   padding: 20px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
 }
 
-form label {
-  font-size: 0.9rem;
-  color: #34495e;
-  padding-right: 20px;
+/* Botões de navegação */
+.tab-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: border 0.3s, box-shadow 0.3s;
-}
-
-form input:focus,
-form textarea:focus {
-  border-bottom: 1px solid #2c3e50;
-  outline: none;
-}
-
-form button {
-  background: #000;
-  color: #fff;
+.tab-button {
+  background-color: #eaeaea;
   border: none;
-  padding: 12px 20px;
-  border-radius: 25px;
-  cursor: pointer;
+  padding: 10px 20px;
   font-size: 1rem;
-  transition: background 0.3s, transform 0.2s;
-  width: fit-content;
-  margin: 0 auto;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-form button:hover {
-  background: #34495e;
-  transform: scale(1.05);
+.tab-button.active {
+  background-color: #333;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 30px;
 }
 
-form button:active {
-  transform: scale(1);
+.tab-button:hover {
+  background-color: #333;
+  color: white;
 }
 
 .footer {
