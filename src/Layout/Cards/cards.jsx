@@ -15,7 +15,7 @@ const Cards = () => {
   const cardsData = [
     {
       title: "Direito Trabalhista",
-      frontText: "Direito Trabalhista",
+      frontText: "Direito do Trabalho",
       backText: "Proteção dos direitos dos trabalhadores e empregadores.",
       backgroundImage: "/Imgs/CardsImgs/trabalhista.jpg",
     },
