@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
+import Banner from './Layout/Banner/banner.jsx';
 import Cards from './Layout/Cards/cards.jsx';
 import Info from './Layout/InfoAdv/infoAdv.jsx';
 import AboutUs from './Layout/AboutUs/aboutUs.jsx';
@@ -9,8 +10,6 @@ import Form from './Layout/Form/form.jsx';
 
 function App() {
   const [activeTab, setActiveTab] = useState("about");
-
- 
 
   const renderContent = () => {
     switch (activeTab) {
@@ -26,9 +25,9 @@ function App() {
   };
   return (
     <div className="landing-page">
+
       {/* Banner */}
-      <header className="banner">
-      </header>
+      <Banner/>
 
       <div className="tab-container">
         {/* Botões centrais */}
@@ -57,7 +56,7 @@ function App() {
       <div className="tab-content">{renderContent()}</div>
     </div>
       
-      <Info/>
+     <Info/>
        
      <Form/>
       <footer className='footer'>

@@ -15,13 +15,13 @@ function Info() {
                 <FaMapMarkerAlt className="icon" />
                 <span>Rua Rezala Simão, n° 1415, sala 02 Sobreloja. Santa Quitéria - Curitiba - PR"</span>
             </div>
-            <div className="contact-item" onClick={() => handleRedirect("https://wa.me/5542999130455")}>
+            <div className="contact-item" onClick={() => handleRedirect("https://wa.me/5542999130339")}>
                 <FaWhatsapp className="icon" />
-                <span>(42) 99913-0455</span>
+                <span>(42) 99913-0339</span>
             </div>
-            <div className="contact-item" onClick={() => handleRedirect("https://www.instagram.com/Kadu2004")}>
+            <div className="contact-item" onClick={() => handleRedirect("https://www.instagram.com/mendesmiranda_adv.associados")}>
                 <FaInstagram className="icon" />
-                <span>@Kadu2004</span>
+                <span>@mendesmiranda_adv.associados</span>
             </div>
         </div>
     )

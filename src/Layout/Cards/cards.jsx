@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import "./cards.css";
 
 
-import TrabalhistaImg from "C:/temp/LandingPages/mendesmirandaadv/src/Layout/Imgs/CardsImgs/trabalhista.jpg";
-import CivilImg from "C:/temp/LandingPages/mendesmirandaadv/src/Layout/Imgs/CardsImgs/civil.jpg";
-import PrevImg from "C:/temp/LandingPages/mendesmirandaadv/src/Layout/Imgs/CardsImgs/prev.webp";
-
 const Cards = () => {
   const [flippedCards, setFlippedCards] = useState({});
 
@@ -21,19 +17,19 @@ const Cards = () => {
       title: "Direito Trabalhista",
       frontText: "Direito Trabalhista",
       backText: "Proteção dos direitos dos trabalhadores e empregadores.",
-      backgroundImage: TrabalhistaImg,
+      backgroundImage: "/Imgs/CardsImgs/trabalhista.jpg",
     },
     {
       title: "Direito Civil",
       frontText: "Direito Civil",
       backText: "Soluções para contratos, família, usucapião, inventários, divórcios e outros casos cíveis.",
-      backgroundImage: CivilImg,
+      backgroundImage: "/Imgs/CardsImgs/civil.jpg",
     },
     {
       title: "Direito Previdenciário",
       frontText: "Direito Previdenciário",
       backText: "Solucões Previdenciárias como aposentadorias, pensão por morte, auxílio doença e Bpc/Loas.",
-      backgroundImage: PrevImg,
+      backgroundImage: "/Imgs/CardsImgs/prev.webp",
     },
   ];
 

@@ -35,7 +35,7 @@ const AboutUs = () => {
 
         {/* Imagem na direita */}
         <div className="about-image">
-          <img src={require("../../Layout/Imgs/AboutUS.jpg")} alt="Sobre Nós" />
+          <img src="/Imgs/AboutUS.jpg" alt="Sobre Nós"/>
         </div>
       </div>
     </section>

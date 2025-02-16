@@ -32,7 +32,7 @@ const Form = () => {
                         `CEP: ${cep}\n` +
                         `Descrição do caso: ${caseDescription}`;
             
-        const whatsappNumber = '5542999130455';
+        const whatsappNumber = '5542999130339';
         const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;  
         
         // Redireciona para o WhatsApp

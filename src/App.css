@@ -8,54 +8,6 @@ body {
   text-align: center;
 }
 
-.banner {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 65vh;
-  width: 100vw;
-  overflow: hidden;
-  background-color: #000000;
-}
-
-.banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("C:/temp/LandingPages/mendesmirandaadv/src/Layout/Imgs/Logo/Logo 2 - Mendes Miranda Advogados Associados.jpeg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #000000;
-}
-
-/* 🔻 RESPONSIVIDADE */
-@media (max-width: 1024px) {
-  .banner {
-    min-height: 80vh; 
-  }
-}
-
-@media (max-width: 768px) {
-  .banner {
-    min-height: 60vh; 
-  }
-}
-
-@media (max-width: 480px) {
-  .banner {
-
-    min-height: 50vh;
-    min-width: 50vh; 
-    }
-  }
-
 /* Estilização geral */
 .tab-container {
   padding: 20px;
