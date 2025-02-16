@@ -11,7 +11,7 @@ const Lawyers = () => {
         },
         {
           name: "Dra. Priscilla K. Mendes Miranda",
-          description: "CEO, Pós-Graduada em Direito Previdenciario pela PUC-PR, atuou por 12 anos como tabeliã-substituta em cartorio de tabelionato e registro civil, possuindo grande experiencia nas questoes extras judiciais atuante na area civil e familia.",
+          description: "CEO, Pós-Graduada em Direito Previdenciario pela PUC-PR, atuou por 12 anos como substituta em cartorio de tabelionato e registro civil, possuindo grande experiencia nas questoes extras judiciais atuante na area civil e familia.",
           image: "/Imgs/DrPriscilla.jpg",
         },
     ];
