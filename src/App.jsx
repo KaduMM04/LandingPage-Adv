@@ -3,7 +3,7 @@ import './App.css';
 
 import Banner from './Layout/Banner/banner.jsx';
 import Cards from './Layout/Cards/cards.jsx';
-import Info from './Layout/InfoAdv/infoAdv.jsx';
+import Info from './Layout/info/InfoAdv.jsx';
 import AboutUs from './Layout/AboutUs/aboutUs.jsx';
 import Lawyers from './Layout/LawyerCards/lawyer.jsx';
 import Form from './Layout/Form/form.jsx';
