@@ -1,5 +1,5 @@
 import React from "react";
-import './Lawyer.css';
+import './lawyer.css';
 
 const Lawyers = () => {
 
