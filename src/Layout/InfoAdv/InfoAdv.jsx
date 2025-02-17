@@ -7,7 +7,6 @@ function Info() {
     const handleRedirect = (url) => {
         window.open(url, " _blank");
     };
-
     return(
         <div className="info">
             <h2>Informações para Contato</h2>
