@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import Banner from './Layout/Banner/banner.jsx';
-import Cards from './Layout/Cards/cards.jsx';
-import Info from './Layout/InfoAdv/infoAdv.jsx';
-import AboutUs from './Layout/AboutUs/aboutUs.jsx';
-import Lawyers from './Layout/LawyerCards/lawyer.jsx';
-import Form from './Layout/Form/form.jsx';
+import Banner from './layout/banner/Banner.jsx';
+import Cards from './layout/cards/Cards.jsx';
+import Info from './layout/info/InfoAdv.jsx';
+import AboutUs from './layout/aboutUs/AboutUs.jsx';
+import Lawyers from './layout/lawyerCards/Lawyer.jsx';
+import Form from './layout/form/Form.jsx';
 
 function App() {
   const [activeTab, setActiveTab] = useState("about");

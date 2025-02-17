@@ -1,5 +1,5 @@
 import React from "react";
-import "./infoAdv.css";
+import "./InfoAdv.css";
 import { FaMapMarkerAlt, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 

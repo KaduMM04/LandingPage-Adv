@@ -1,0 +1,40 @@
+.info {
+    padding: 20px;
+    background: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .info h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: aliceblue;
+  }
+  
+  .contact-item {
+    display: flex; /* Flexbox para alinhar ícone e texto */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    perspective: 1000px;
+  }
+  
+  .contact-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+  }
+  
+  .contact-item .icon {
+    font-size: 24px;
+    color: aliceblue;
+  }
+  
+  .contact-item span {
+    font-size: 18px;
+    color: aliceblue;
+  }
+
+  
