@@ -60,7 +60,7 @@ function App() {
        
      <Form/>
       <footer className='footer'>
-          <p>&copy; 2024 Mendes Miranda Advogados e Associados - Todos os direitos reservados.</p>
+          <p>&copy; 2024 Mendes Miranda Advogados Associados - Todos os direitos reservados.</p>
         </footer>
       </div>
   )
